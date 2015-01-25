@@ -6,5 +6,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'AP_Encuestas.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^encuestas/', include('encuestas.urls', namespace='encuestas')),
     url(r'^admin/', include(admin.site.urls)),
 )
